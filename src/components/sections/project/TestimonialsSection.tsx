@@ -94,7 +94,7 @@ export default function TestimonialsSection({ id = "testimonials" }: Testimonial
                     <p className="text-sm text-text-medium">{testimonial.project}</p>
                   </div>
                 </div>
-                <p className="text-text-medium italic flex-grow">"{testimonial.text}"</p>
+                <p className="text-text-medium italic flex-grow">&quot;{testimonial.text}&quot;</p>
               </motion.div>
             </AnimatedSection>
           ))}

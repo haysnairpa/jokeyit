@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { ChevronDown, MessageSquare } from "lucide-react"
+import { ChevronDown } from "lucide-react"
 import AnimatedSection from "@/components/ui/animated-section"
 import ScrollAnimation from "@/components/ui/scroll-animation"
 

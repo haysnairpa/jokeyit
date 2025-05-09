@@ -4,7 +4,6 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import { CheckCircle } from "lucide-react"
 import AnimatedSection from "@/components/ui/animated-section"
-import AnimatedList from "@/components/ui/animated-list"
 
 interface AdvantagesSectionProps {
   id?: string;
