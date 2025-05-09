@@ -3,5 +3,6 @@
   "rules": {
     "@typescript-eslint/no-unused-vars": "off",
     "react/no-unescaped-entities": "off"
-  }
+  },
+  "ignorePatterns": ["node_modules/", ".next/"]
 }
