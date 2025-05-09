@@ -47,7 +47,7 @@ export default function ProjectHeader() {
         {/* Desktop CTA Button */}
         <div className="hidden md:block">
           <a 
-            href="https://wa.me/6287763287548?text=Halo%20saya%20ingin%20konsultasi%20tentang%20project%20coding"
+            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=Halo%20saya%20ingin%20konsultasi%20tentang%20project%20coding`}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -92,7 +92,7 @@ export default function ProjectHeader() {
             ))}
             <div className="pt-2 border-t border-gray-200">
               <a 
-                href="https://wa.me/6287763287548?text=Halo%20saya%20ingin%20konsultasi%20tentang%20project%20coding"
+                href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=Halo%20saya%20ingin%20konsultasi%20tentang%20project%20coding`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block" 

@@ -18,7 +18,7 @@ export default function CTASection() {
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Link
-                href="https://wa.me/6287763287548?text=Halo%20jokey.it%2C%20saya%20ingin%20konsultasi%20gratis"
+                href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=Halo%20jokey.it%2C%20saya%20ingin%20konsultasi%20gratis`}
                 target="_blank"
                 className="inline-flex items-center justify-center rounded-md bg-white px-4 py-4 text-sm font-medium text-primary shadow transition-colors hover:bg-white/50 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white disabled:pointer-events-none disabled:opacity-50"
               >

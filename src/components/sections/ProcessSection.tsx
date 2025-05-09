@@ -211,7 +211,7 @@ export default function ProcessSection() {
           viewport={{ once: true }}
         >
           <motion.a
-            href="https://wa.me/6287763287548?text=Halo%20jokey.it%2C%20saya%20ingin%20memulai%20proyek"
+            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=Halo%20jokey.it%2C%20saya%20ingin%20memulai%20proyek`}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary inline-flex items-center justify-center gap-2 px-8 py-3 min-w-[220px]"

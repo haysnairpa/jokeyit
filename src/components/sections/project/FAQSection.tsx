@@ -146,7 +146,7 @@ export default function FAQSection({ id = "faq" }: FAQSectionProps) {
           viewport={{ once: true }}
         >
           <motion.a 
-            href="https://wa.me/6287763287548?text=Halo%20saya%20ingin%20konsultasi%20tentang%20project%20coding"
+            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=Halo%20saya%20ingin%20konsultasi%20tentang%20project%20coding`}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-outline inline-flex items-center justify-center gap-2 px-8 py-3 min-w-[220px]"

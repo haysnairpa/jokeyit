@@ -18,7 +18,7 @@ import CTASection from "@/components/sections/project/CTASection"
 
 export default function AnotherProject() {
   // WhatsApp link with pre-filled message
-  const whatsappLink = "https://wa.me/6287763287548?text=Halo%20saya%20ingin%20konsultasi%20tentang%20project%20coding";
+  const whatsappLink = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=Halo%20saya%20ingin%20konsultasi%20tentang%20project%20coding`;
   
   return (
     <PageTransition>

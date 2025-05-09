@@ -37,7 +37,7 @@ export default function HeroSection() {
             <AnimatedSection direction="up" delay={0.5}>
               <div className="flex flex-col gap-4 sm:flex-row justify-center mt-4">
                 <motion.a
-                  href="https://wa.me/6287763287548?text=Halo%20jokey.it%2C%20saya%20tertarik%20dengan%20layanan%20Anda"
+                  href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=Halo%20jokey.it%2C%20saya%20tertarik%20dengan%20layanan%20Anda`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary inline-flex items-center justify-center gap-2 px-8 py-3 w-[600px] sm:min-w-[220px]"

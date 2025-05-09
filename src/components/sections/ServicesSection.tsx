@@ -291,7 +291,7 @@ export default function ServicesSection() {
                 Kami siap membantu kebutuhan digital spesifik untuk Anda. Ceritakan ide dan kebutuhan Anda, dan kami akan mewujudkannya dengan solusi yang tepat.
               </motion.p>
               <motion.a
-                href="https://wa.me/6287763287548?text=Halo%20jokey.it%2C%20saya%20punya%20kebutuhan%20khusus%20untuk%20proyek%20saya"
+                href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=Halo%20jokey.it%2C%20saya%20punya%20kebutuhan%20khusus%20untuk%20proyek%20saya`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary inline-flex items-center gap-2"
