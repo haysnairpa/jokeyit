@@ -22,7 +22,10 @@ export const metadata: Metadata = {
   title: "Jokey.IT",
   description: "Jokey IT - Solusi Digital yang Tepat untuk Kebutuhan Anda",
   icons: {
-    icon: [{ url: "/jokeyit.png", type: "image/png" }],
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/jokeyit.png", type: "image/png" }
+    ],
     shortcut: [{ url: "/jokeyit.png", type: "image/png" }],
     apple: [{ url: "/jokeyit.png" }],
   },
