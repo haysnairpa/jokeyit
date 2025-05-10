@@ -57,7 +57,7 @@ export default function ProjectTypesSection({ id = "projects" }: ProjectTypesSec
     },
     {
       icon: <MessageSquare className="h-8 w-8" />,
-      title: "Lainnya?",
+      title: "Lainnya",
       description: "Ga ada di list ini? Lanjut ke WA aja, obrolin bareng-bareng!"
     }
   ];

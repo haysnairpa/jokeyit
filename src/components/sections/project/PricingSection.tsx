@@ -33,7 +33,7 @@ export default function PricingSection({ id = "pricing" }: PricingSectionProps) 
         
         <AnimatedSection direction="up" delay={0.2}>
           <motion.div 
-            className="bg-white rounded-2xl p-8 md:p-12 shadow-md border border-gray-100 max-w-3xl mx-auto text-center"
+            className="bg-white rounded-2xl p-6 md:p-12 shadow-md border border-gray-100 max-w-3xl mx-auto text-center"
             whileHover={{ boxShadow: "var(--shadow-lg)" }}
             transition={{ type: "spring", stiffness: 200, damping: 15 }}
           >
@@ -80,19 +80,21 @@ export default function PricingSection({ id = "pricing" }: PricingSectionProps) 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.5 }}
-              className="flex sm:flex-row gap-4 pt-4 justify-center"
+              className="flex flex-col gap-4 pt-4"
             >
-              <div className="flex items-center justify-center gap-2 p-4 bg-primary-light rounded-lg">
-                <Calendar className="h-5 w-5 text-primary" />
-                <span className="text-sm font-medium">Deadline Fleksibel</span>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="flex items-center justify-center gap-2 p-3 bg-primary-light rounded-lg">
+                  <Calendar className="h-5 w-5 text-primary" />
+                  <span className="text-sm font-medium">Deadline Fleksibel</span>
+                </div>
+                
+                <div className="flex items-center justify-center gap-2 p-3 bg-primary-light rounded-lg">
+                  <CheckCircle className="h-5 w-5 text-primary" />
+                  <span className="text-sm font-medium">Revisi Gratis</span>
+                </div>
               </div>
               
-              <div className="flex items-center justify-center gap-2 p-4 bg-primary-light rounded-lg">
-                <CheckCircle className="h-5 w-5 text-primary" />
-                <span className="text-sm font-medium">Revisi Gratis</span>
-              </div>
-              
-              <div className="flex items-center justify-center gap-2 p-4 bg-primary-light rounded-lg">
+              <div className="flex items-center justify-center gap-2 p-3 bg-primary-light rounded-lg max-w-[200px] mx-auto">
                 <FileCode className="h-5 w-5 text-primary" />
                 <span className="text-sm font-medium">Bantuan 24/7</span>
               </div>

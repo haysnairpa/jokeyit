@@ -21,7 +21,7 @@ export default function ProjectHeader() {
     { name: "Layanan", href: "#advantages" },
     { name: "Jenis Project", href: "#projects" },
     { name: "Harga", href: "#pricing" },
-    { name: "Testimoni", href: "#testimonials" },
+    // { name: "Testimoni", href: "#testimonials" },
     { name: "FAQ", href: "#faq" }
   ];
   
@@ -61,51 +61,91 @@ export default function ProjectHeader() {
           </a>
         </div>
         
-        <button 
+        <motion.button 
           className="flex items-center justify-center md:!hidden p-2 rounded-md" 
           style={{backgroundColor: "var(--primary-light)"}}
           onClick={toggleMobileMenu}
           aria-label="Toggle mobile menu"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
         >
-          {mobileMenuOpen ? (
-            <X style={{color: "var(--primary-color)"}} className="h-6 w-6" />
-          ) : (
-            <AlignJustify style={{color: "var(--primary-color)"}} className="h-6 w-6" />
-          )}
+          <motion.div
+            initial={false}
+            animate={{ rotate: mobileMenuOpen ? 90 : 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            {mobileMenuOpen ? (
+              <X style={{color: "var(--primary-color)"}} className="h-6 w-6" />
+            ) : (
+              <AlignJustify style={{color: "var(--primary-color)"}} className="h-6 w-6" />
+            )}
+          </motion.div>
           <span className="sr-only">Menu</span>
-        </button>
+        </motion.button>
       </div>
       
       {/* Mobile Navigation Menu */}
-      {mobileMenuOpen && (
-        <div className="md:hidden absolute top-16 left-0 right-0 bg-white shadow-lg z-50 border-t">
-          <div className="container py-4 space-y-4">
-            {projectSections.map((section) => (
+      <motion.div 
+        className="md:hidden absolute top-16 left-0 right-0 bg-white shadow-lg z-50 border-t overflow-hidden"
+        initial={{ height: 0, opacity: 0 }}
+        animate={{ 
+          height: mobileMenuOpen ? "auto" : 0,
+          opacity: mobileMenuOpen ? 1 : 0
+        }}
+        transition={{ 
+          duration: 0.3, 
+          ease: "easeInOut"
+        }}
+      >
+        <div className="container py-4 space-y-4">
+          {projectSections.map((section, index) => (
+            <motion.div
+              key={section.name}
+              initial={{ x: -20, opacity: 0 }}
+              animate={{ x: mobileMenuOpen ? 0 : -20, opacity: mobileMenuOpen ? 1 : 0 }}
+              transition={{ 
+                duration: 0.3, 
+                delay: mobileMenuOpen ? 0.1 + (index * 0.05) : 0,
+                ease: "easeOut"
+              }}
+            >
               <Link 
-                key={section.name}
                 href={section.href} 
                 className="block px-4 py-2 text-base hover:bg-gray-50 rounded-md" 
                 onClick={toggleMobileMenu}
               >
                 {section.name}
               </Link>
-            ))}
-            <div className="pt-2 border-t border-gray-200">
-              <a 
-                href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=Halo%20saya%20ingin%20konsultasi%20tentang%20project%20coding`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block" 
-                onClick={toggleMobileMenu}
+            </motion.div>
+          ))}
+          <motion.div 
+            className="pt-2 border-t border-gray-200"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: mobileMenuOpen ? 0 : 20, opacity: mobileMenuOpen ? 1 : 0 }}
+            transition={{ 
+              duration: 0.3, 
+              delay: mobileMenuOpen ? 0.3 : 0,
+              ease: "easeOut"
+            }}
+          >
+            <a 
+              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=Halo%20saya%20ingin%20konsultasi%20tentang%20project%20coding`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block" 
+              onClick={toggleMobileMenu}
+            >
+              <motion.button 
+                className="w-full btn btn-primary"
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
               >
-                <button className="w-full btn btn-primary">
-                  Hubungi Kami
-                </button>
-              </a>
-            </div>
-          </div>
+                Hubungi Kami
+              </motion.button>
+            </a>
+          </motion.div>
         </div>
-      )}
+      </motion.div>
     </header>
   )
 }

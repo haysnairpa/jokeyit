@@ -37,7 +37,7 @@ export default function HeroSection({ whatsappLink }: HeroSectionProps) {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              Kami bantu kamu selesaikan project apapun terkait coding atau software development. Dari tugas kuliah, ide pribadi, sampai eksperimen seru—tim kami siap bantu.
+              Kami bantu kamu selesaikan project apapun terkait coding atau software development. Dari tugas kuliah, ide pribadi, atau apapun itu—tim kami siap bantu.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}

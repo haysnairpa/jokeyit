@@ -35,12 +35,12 @@ export default function HeroSection() {
               </div>
             </AnimatedSection>
             <AnimatedSection direction="up" delay={0.5}>
-              <div className="flex flex-col gap-4 sm:flex-row justify-center mt-4">
+              <div className="flex flex-col gap-4 sm:flex-row justify-center mt-4 w-full max-w-5xl mx-auto px-6">
                 <motion.a
                   href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=Halo%20jokey.it%2C%20saya%20tertarik%20dengan%20layanan%20Anda`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-primary inline-flex items-center justify-center gap-2 px-8 py-3 w-[600px] sm:min-w-[220px]"
+                  className="btn btn-primary inline-flex items-center justify-center gap-2 px-16 py-3 w-full sm:min-w-[350px] md:min-w-[600px]"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -49,11 +49,11 @@ export default function HeroSection() {
                 </motion.a>
                 <motion.a 
                   href="#services" 
-                  className="btn btn-outline inline-flex items-center justify-center gap-2 px-8 py-3 min-w-[200px] sm:min-w-[220px]"
+                  className="btn btn-outline inline-flex items-center justify-center gap-2 px-16 py-3 w-full sm:min-w-[350px] md:min-w-[600px]"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <span>Pelajari Layanan</span>
+                  <span>Lihat Layanan</span>
                   <ChevronDown className="h-4 w-4" />
                 </motion.a>
               </div>
