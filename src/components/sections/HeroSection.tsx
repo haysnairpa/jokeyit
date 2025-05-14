@@ -23,14 +23,14 @@ export default function HeroSection() {
               <div className="space-y-6">
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-7xl/none" style={{color: "var(--text-dark)", letterSpacing: "-0.02em"}}>
                   Transformasi Digital untuk <span style={{color: "var(--primary-color)", position: "relative"}}>
-                    Bisnis Anda
+                    Kebutuhan Anda
                     <svg className="absolute -bottom-1 left-0 w-full" height="6" viewBox="0 0 200 6" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                       <path d="M0 3C50 0.5 150 0.5 200 3C150 5.5 50 5.5 0 3Z" fill="var(--primary-light)"></path>
                     </svg>
                   </span>
                 </h1>
                 <p className="text-lg md:text-xl mx-auto max-w-[700px]" style={{color: "var(--text-medium)", lineHeight: "1.6"}}>
-                Solusi digital terbaik untuk UMKM, mahasiswa, organisasi, komunitas, dan startup. Kami membantu Anda membangun kehadiran online yang profesional dan efektif.
+                Solusi digital terbaik untuk UMKM, mahasiswa, organisasi, komunitas, sampai startup. Kami membantu Anda membangun kehadiran online yang profesional dan efektif.
                 </p>
               </div>
             </AnimatedSection>

@@ -117,9 +117,9 @@ export default function ProcessSection() {
     {
       number: 2,
       title: "Perencanaan",
-      description: "Kami menyusun proposal, desain, dan timeline yang sesuai dengan kebutuhan Anda. Setiap detail direncanakan dengan matang untuk hasil optimal.",
+      description: "Kami menyusun perencanaan dan timeline yang sesuai dengan kebutuhan Anda. Setiap detail direncanakan dengan matang untuk hasil optimal.",
       icon: <Layout className="h-6 w-6 text-primary" />,
-      benefits: ["Proposal detail dan transparan", "Wireframe dan prototype"]
+      benefits: ["Proposal detail dan transparan", "Rincian tugas dan milestone proyek"]
     },
     {
       number: 3,
