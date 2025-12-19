@@ -6,14 +6,34 @@ import Footer from "@/components/sections/Footer"
 import ContactSection from "@/components/sections/ContactSection"
 import PageTransition from "@/components/ui/page-transition"
 import { motion } from "framer-motion"
+import Script from "next/script"
 
 export default function ContactPage() {
   return (
-    <PageTransition>
-      <div className="flex flex-col min-h-screen">
-        <Header />
-        <main className="flex-1">
-          <section className="py-20 md:py-28 bg-white relative overflow-hidden">
+    <>
+      <Script
+        id="schema-contact"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            name: "Hubungi Jokey.IT",
+            url: "https://jokey.id/contact",
+            organization: {
+              "@type": "Organization",
+              name: "Jokey.IT",
+              email: "jokeydigitalize@gmail.com",
+              url: "https://jokey.id",
+            },
+          }),
+        }}
+      />
+      <PageTransition>
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-1">
+            <section className="py-20 md:py-28 bg-white relative overflow-hidden">
             <motion.div 
               className="absolute top-0 left-0 w-1/3 h-1/3 bg-primary-light opacity-10 rounded-full blur-3xl -translate-y-1/3 -translate-x-1/4"
               animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.15, 0.1] }}
@@ -55,10 +75,11 @@ export default function ContactPage() {
               
               <ContactSection />
             </div>
-          </section>
-        </main>
-        <Footer />
-      </div>
-    </PageTransition>
+            </section>
+          </main>
+          <Footer />
+        </div>
+      </PageTransition>
+    </>
   )
 }

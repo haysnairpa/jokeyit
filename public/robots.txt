@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /.next/
+Disallow: /api/
+Disallow: /_next/
+
+Sitemap: https://jokey.id/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /

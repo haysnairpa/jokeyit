@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { ChevronRight, Clock, Shield, Zap } from "lucide-react"
+import { ChevronRight, Clock, Shield, MessagesSquare } from "lucide-react"
 
 export default function CTASection() {
   return (
@@ -43,10 +43,10 @@ export default function CTASection() {
               </div>
             </div>
             <div className="flex items-center space-x-4">
-              <Zap className="h-6 w-6 text-white" />
+              <MessagesSquare className="h-6 w-6 text-white" />
               <div>
-                <h3 className="font-bold text-white">Dukungan Jangka Panjang</h3>
-                <p className="text-white/80">Kami siap membantu Anda bahkan setelah proyek selesai</p>
+                <h3 className="font-bold text-white">Responsif & Terbuka</h3>
+                <p className="text-white/80">Komunikasi yang jelas dan transparan</p>
               </div>
             </div>
           </div>

@@ -122,20 +122,15 @@ export default function FAQSection() {
     {
       number: "03",
       question: "Apakah ada biaya maintenance bulanan?",
-      answer: "Kami menawarkan paket maintenance bulanan mulai dari Rp 300 ribu per bulan yang mencakup pembaruan keamanan, backup rutin, dan dukungan teknis. Namun, ini bersifat opsional dan Anda dapat memilih untuk mengelola website atau aplikasi secara mandiri setelah proyek selesai."
+      answer: "Kami menawarkan paket maintenance bulanan yang mencakup pembaruan keamanan, backup rutin, dan dukungan teknis. Namun, ini bersifat opsional dan Anda dapat memilih untuk mengelola website atau aplikasi secara mandiri setelah proyek selesai."
     },
     {
       number: "04",
       question: "Berapa kali revisi yang diperbolehkan?",
-      answer: "Kami menyediakan hingga 3 kali revisi mayor dalam paket standar kami untuk memastikan hasil akhir sesuai dengan harapan Anda. Revisi minor seperti perubahan teks atau gambar tidak dibatasi selama proses pengembangan. Untuk revisi tambahan, kami menerapkan biaya berdasarkan kompleksitas perubahan."
+      answer: "kami menerima revisi selama proses pengembangan berlangsung, selama tidak mengubah arah utama proyek. Untuk perubahan besar, kami akan diskusikan secara transparan dan terbuka terlebih dahulu."
     },
     {
       number: "05",
-      question: "Apakah saya akan mendapatkan source code?",
-      answer: "Ya, Anda akan mendapatkan akses penuh ke source code website atau aplikasi setelah pembayaran lunas. Ini termasuk semua file desain, kode, dan aset yang digunakan dalam proyek. Kami juga menyediakan dokumentasi dasar untuk membantu Anda memahami struktur proyek."
-    },
-    {
-      number: "06",
       question: "Bagaimana proses pembayaran?",
       answer: "Kami menerapkan sistem pembayaran bertahap: 50% di awal sebagai uang muka untuk memulai proyek, dan 50% setelah proyek selesai dan Anda puas dengan hasilnya. Untuk proyek besar, kami dapat menyusun jadwal pembayaran yang lebih fleksibel dengan milestone yang jelas."
     }
@@ -170,7 +165,7 @@ export default function FAQSection() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Pertanyaan yang Sering Diajukan
+            Pertanyaan yang Sering Ditanyakan
           </motion.h2>
           <motion.p 
             className="section-subtitle"

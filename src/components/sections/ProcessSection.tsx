@@ -131,9 +131,9 @@ export default function ProcessSection() {
     {
       number: 4,
       title: "Peluncuran",
-      description: "Proyek diluncurkan dengan dukungan penuh dan pelatihan untuk tim Anda. Kami memastikan transisi yang mulus dan lancar.",
+      description: "Memastikan transisi yang mulus dan lancar dari tahap pengembangan ke tahap produksi.",
       icon: <Zap className="h-6 w-6 text-primary" />,
-      benefits: ["Dukungan teknis 30 hari", "Dokumentasi lengkap"]
+      benefits: ["Produksi tepat sesuai rencana", "Panduan atau dokumentasi operasional"]
     }
   ];
 
@@ -166,7 +166,7 @@ export default function ProcessSection() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Tips simple untuk order
+            Proses Mudah, Hasil Maksimal
           </motion.h2>
           <motion.p 
             className="section-subtitle"
